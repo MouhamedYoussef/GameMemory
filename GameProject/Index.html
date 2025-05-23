@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content=" memory game ">
+</head>
+<body>
+
+  <header>
+    <h1>Memory Game</h1>
+    <p>Test your memory by repeating the pattern!</p>
+  </header>
+
+  <main class="game-container">
+    <!-- How to play section -->
+    <section class="instructions" aria-label="Game Instructions">
+      <button id="btn-how-to-play" class="btn-how-to-play">How to Play</button>
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="close-modal" class="close-modal">&times;</span>
+          <h2>How to Play</h2>
+	<!--- list shows how to play the game in instructions -->
+          <ol>
+            <li>Click "Start" to begin the game.</li>
+            <li>Watch the pattern of flashing lights.</li>
+            <li>Repeat the pattern by clicking the buttons in order.</li>
+            <li>If you make a mistake, the game is over!</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Board -->
+    <section class="game-board" aria-label="Game Buttons">
+      <div id="level-display">Level: 0</div>
+
+      <div class="grid">
+        <button class="tile green" data-color="green" aria-label="Green Tile"></button>
+        <button class="tile red" data-color="red" aria-label="Red Tile"></button>
+        <button class="tile yellow" data-color="yellow" aria-label="Yellow Tile"></button>
+        <button class="tile blue" data-color="blue" aria-label="Blue Tile"></button>
+      </div>
+	<!--- Start game button -->
+      <button id="btn-start">Start</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>MohamedGame| Memory Game Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
