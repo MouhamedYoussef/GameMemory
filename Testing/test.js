@@ -36,10 +36,63 @@ function testModal() {
         }
     }, 100)
 }
+function testRestartButton() {
+    const startBtn = document.getElementById('btn-start')
+    
+    startBtn.click()
+    
+    setTimeout(function() {
+        if (startBtn.textContent === 'Restart Game') {
+            console.log('RESTART BUTTON TEST: PASS')
+        } else {
+            console.log('RESTART BUTTON TEST: FAIL')
+        }
+    }, 500)
+}
+
+function testStatusMessage() {
+    const startBtn = document.getElementById('btn-start')
+    const statusMsg = document.getElementById('status-message')
+    
+    startBtn.click()
+    
+    setTimeout(function() {
+        if (statusMsg.textContent.includes('Watch')) {
+            console.log('STATUS MESSAGE TEST: PASS')
+        } else {
+            console.log('STATUS MESSAGE TEST: FAIL')
+        }
+    }, 600)
+}
+
+function testGameReset() {
+    const startBtn = document.getElementById('btn-start')
+    const levelText = document.getElementById('level-display')
+    
+    startBtn.click()
+    
+    setTimeout(function() {
+        startBtn.click()
+        
+        setTimeout(function() {
+            if (levelText.textContent === 'Level 1') {
+                console.log('GAME RESET TEST: PASS')
+            } else {
+                console.log('GAME RESET TEST: FAIL')
+            }
+        }, 1000)
+    }, 1000)
+}
+
+
+
 function runAllTests() {
     console.log('Run tests')
     testModal()
     testStartButton()
+    testRestartButton()
+    testStatusMessage()
+    testGameReset()
 }
 
 runAllTests()
