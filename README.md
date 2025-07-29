@@ -47,3 +47,8 @@ To run this project locally:
 1. https://www.youtube.com/watch?v=41i0LS9Xy-o&list=PLDoPjvoNmBAzSymugTQZDuEOG5I64uhyU
 2. https://www.youtube.com/watch?v=8JDiaYIgqTk
 3. Deepseek & chatgpt to edit javascript file
+
+---
+
+## Link to the porject hosted on github pages 
+- https://mouhamedyoussef.github.io/GameMemory/HTML/Index.html
