@@ -15,7 +15,7 @@
     let level = 0;
     let gameStarted = false;
     let userTurn = false;
-    let canClick = true;
+    let canClick = true;3
     let isShowingSequence = false;
 
     // Sound URLs
