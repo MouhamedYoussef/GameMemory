@@ -1,0 +1,61 @@
+<!-- i watched this youtube videos to get ideas about different designs of a memory games until i created this design
+https://www.youtube.com/watch?v=41i0LS9Xy-o&list=PLDoPjvoNmBAzSymugTQZDuEOG5I64uhyU
+https://www.youtube.com/watch?v=8JDiaYIgqTk 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Game</title>
+  <meta name="description" content="memory game">
+  <link rel="stylesheet" href="../CSS/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Memory Game</h1>
+    <p>Test your memory by repeating the pattern!</p>
+  </header>
+
+  <main class="game-container">
+    <!-- How to play section -->
+    <section class="instructions" aria-label="Game Instructions">
+      <button id="btn-how-to-play" class="btn-how-to-play">How to Play</button>
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="close-modal" class="close-modal">&times;</span>
+          <h2>How to Play</h2>
+          <ol>
+            <li>Click "Start" to begin the game.</li>
+            <li>Watch the pattern of flashing lights.</li>
+            <li>Repeat the pattern by clicking the buttons in order.</li>
+            <li>If you make a mistake, the game is over!</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Board -->
+    <section class="game-board" aria-label="Game Buttons">
+      <div id="level-display">Click Start to Begin</div>
+      <div id="status-message" class="status-message"></div>
+
+      <div class="grid">
+        <button class="tile green" data-color="green" aria-label="Green Tile" disabled></button>
+        <button class="tile red" data-color="red" aria-label="Red Tile" disabled></button>
+        <button class="tile yellow" data-color="yellow" aria-label="Yellow Tile" disabled></button>
+        <button class="tile blue" data-color="blue" aria-label="Blue Tile" disabled></button>
+      </div>
+
+      <button id="btn-start">Start Game</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>MohamedGame | Memory Game Project</p>
+  </footer>
+<script src="../JS/script.js"></script>
+<script src="test.js"></script>
+</body>
+</html>

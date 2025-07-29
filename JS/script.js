@@ -19,7 +19,7 @@
     let isShowingSequence = false;
 
     // Sound URLs
-    // Here i gave every colour a sound from s3 amazonaws website so when the pattern start and the user can hear everytime it choosing a pattern and colour
+    // Here i gave every color a sound from s3 amazonaws website so when the pattern start and the user can hear everytime it choosing a pattern and colour
     const sounds = {
       green: "https://s3.amazonaws.com/freecodecamp/simonSound1.mp3",
       red: "https://s3.amazonaws.com/freecodecamp/simonSound2.mp3",
@@ -133,13 +133,13 @@
             statusMessage.textContent = "Your turn! Repeat the sequence";
           }, 800);
         }
-      }, 700); // Slightly longer delay for better visibility
+      }, 700); // tried to make longer delay for better visibility
     }
 
     // Get Random Color
     function getRandomColor() {
       const colors = ["green", "red", "yellow", "blue"];
-      // chatgpt make it easy to get random color
+      // chatgpt make it easy to get random color cause i didn't know this function
       return colors[Math.floor(Math.random() * 4)];
     }
 
